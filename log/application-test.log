@@ -1,0 +1,146 @@
+18:11:59.184 [main] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+18:11:59.195 [main] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+18:11:59.196 [main] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+18:11:59.197 [main] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@29ba4338, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@57175e74, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7bb58ca3]
+18:11:59.480 [main] INFO  demo.ControllersTest - Starting ControllersTest on loujiandeMacBook-Pro.local with PID 36730 (/Users/loujian/Usede/springboot-demo/target/test-classes started by loujian in /Users/loujian/Usede/springboot-demo)
+18:11:59.729 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4d1c00d0: startup date [Wed Jun 08 18:11:59 CST 2016]; root of context hierarchy
+18:12:00.438 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.1.3.Final
+18:12:00.983 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4e6d7365, org.springframework.security.web.context.SecurityContextPersistenceFilter@2d691f3d, org.springframework.security.web.header.HeaderWriterFilter@1d269ed7, org.springframework.security.web.csrf.CsrfFilter@27f3b6d6, org.springframework.security.web.authentication.logout.LogoutFilter@72889280, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1e7f2e0f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@78d39a69, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7c0da600, org.springframework.security.web.session.SessionManagementFilter@41c89d2f, org.springframework.security.web.access.ExceptionTranslationFilter@2e16b08d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@19542407]
+18:12:00.991 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@654c1a54, org.springframework.security.web.context.SecurityContextPersistenceFilter@3961a41a, org.springframework.security.web.header.HeaderWriterFilter@73d6d0c, org.springframework.security.web.csrf.CsrfFilter@16943e88, org.springframework.security.web.authentication.logout.LogoutFilter@d2387c8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@238ad8c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5a4ed68f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@367795c7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5bdaf2ce, org.springframework.security.web.session.SessionManagementFilter@e36bb2a, org.springframework.security.web.access.ExceptionTranslationFilter@4604b900, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@c827db]
+18:12:01.852 [main] INFO  demo.ControllersTest - Started ControllersTest in 2.571 seconds (JVM running for 3.782)
+18:12:02.061 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/customers/],produces=[application/json]}" onto java.util.List demo.web.CustomerController.customers()
+18:12:02.062 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/customers/{customer}],methods=[GET],produces=[application/json]}" onto java.lang.String demo.web.CustomerController.getCustomer(java.lang.Long,javax.servlet.http.HttpSession)
+18:12:02.062 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/customers/objmap],methods=[GET],produces=[application/json]}" onto java.lang.String demo.web.CustomerController.objmap()
+18:12:02.062 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/customers/commits],methods=[GET],produces=[application/json]}" onto java.lang.String demo.web.CustomerController.getCommits()
+18:12:02.091 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@aaee2a2
+18:12:02.164 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+18:12:02.164 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+18:12:02.167 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 3 ms
+18:12:02.394 [main] INFO  o.s.b.t.WebAppIntegrationTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+18:12:02.395 [main] INFO  o.s.b.t.WebAppIntegrationTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+18:12:02.397 [main] INFO  o.s.b.t.WebAppIntegrationTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+18:12:02.398 [main] INFO  o.s.b.t.WebAppIntegrationTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@eca6a74, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@79fd6f95, org.springframework.test.context.support.DirtiesContextTestExecutionListener@48840594]
+18:12:02.456 [main] INFO  d.SampleWebFreeMarkerApplicationTests - Starting SampleWebFreeMarkerApplicationTests on loujiandeMacBook-Pro.local with PID 36730 (/Users/loujian/Usede/springboot-demo/target/test-classes started by loujian in /Users/loujian/Usede/springboot-demo)
+18:12:02.459 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@fd9ebde: startup date [Wed Jun 08 18:12:02 CST 2016]; root of context hierarchy
+18:12:03.054 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 0 (http)
+18:12:03.368 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+18:12:03.370 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.0.28
+18:12:03.513 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:12:03.514 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1055 ms
+18:12:03.764 [localhost-startStop-1] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6bac0b1c, org.springframework.security.web.context.SecurityContextPersistenceFilter@3f5796e8, org.springframework.security.web.header.HeaderWriterFilter@630aaf02, org.springframework.security.web.csrf.CsrfFilter@65ea8d66, org.springframework.security.web.authentication.logout.LogoutFilter@623bfbe2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@67745b3b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@51308a68, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@48a71d52, org.springframework.security.web.session.SessionManagementFilter@e67abff, org.springframework.security.web.access.ExceptionTranslationFilter@63776198, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4cdf4f15]
+18:12:03.767 [localhost-startStop-1] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@346efffa, org.springframework.security.web.context.SecurityContextPersistenceFilter@234c0de3, org.springframework.security.web.header.HeaderWriterFilter@64f25c79, org.springframework.security.web.csrf.CsrfFilter@7ae10cef, org.springframework.security.web.authentication.logout.LogoutFilter@75ea5cf7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6311604c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@15894884, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@63eecfd8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@639ad74, org.springframework.security.web.session.SessionManagementFilter@5138f55f, org.springframework.security.web.access.ExceptionTranslationFilter@2462422c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4385215e]
+18:12:03.801 [localhost-startStop-1] INFO  o.s.b.c.e.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+18:12:03.809 [localhost-startStop-1] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+18:12:03.810 [localhost-startStop-1] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+18:12:03.810 [localhost-startStop-1] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+18:12:03.965 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@fd9ebde: startup date [Wed Jun 08 18:12:02 CST 2016]; root of context hierarchy
+18:12:03.980 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/customers/],produces=[application/json]}" onto java.util.List demo.web.CustomerController.customers()
+18:12:03.981 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/customers/{customer}],methods=[GET],produces=[application/json]}" onto java.lang.String demo.web.CustomerController.getCustomer(java.lang.Long,javax.servlet.http.HttpSession)
+18:12:03.981 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/customers/objmap],methods=[GET],produces=[application/json]}" onto java.lang.String demo.web.CustomerController.objmap()
+18:12:03.981 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/customers/commits],methods=[GET],produces=[application/json]}" onto java.lang.String demo.web.CustomerController.getCommits()
+18:12:03.982 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto java.lang.String demo.web.HomeController.home()
+18:12:03.983 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login]}" onto public java.lang.String demo.web.WelcomeController.login(java.util.Map<java.lang.String, java.lang.Object>)
+18:12:03.983 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/welcome]}" onto public java.lang.String demo.web.WelcomeController.welcome(java.util.Map<java.lang.String, java.lang.Object>)
+18:12:03.983 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/welcomeandy]}" onto public java.lang.String demo.web.WelcomeController.welcomeandy(java.util.Map<java.lang.String, java.lang.Object>)
+18:12:03.985 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+18:12:03.985 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+18:12:04.013 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:12:04.013 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:12:04.047 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:12:04.126 [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+18:12:04.192 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-auto-1"]
+18:12:04.206 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-auto-1"]
+18:12:04.237 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+18:12:04.262 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 49437 (http)
+18:12:04.265 [main] INFO  d.SampleWebFreeMarkerApplicationTests - Started SampleWebFreeMarkerApplicationTests in 1.856 seconds (JVM running for 6.195)
+18:12:04.427 [http-nio-auto-1-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+18:12:04.427 [http-nio-auto-1-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+18:12:04.440 [http-nio-auto-1-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+18:12:04.738 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-auto-1-49437"]
+18:12:04.793 [main] INFO  o.a.catalina.core.StandardService - Stopping service Tomcat
+18:12:04.794 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+18:12:04.801 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-auto-1-49437"]
+18:12:04.805 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-auto-1"]
+18:12:04.809 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@fd9ebde: startup date [Wed Jun 08 18:12:02 CST 2016]; root of context hierarchy
+18:12:04.925 [main] INFO  c.a.e.s.core.BootupClassPathSearch - Classpath search hits in jars [] pkgs [org.example.domain] searchTime [37]
+18:12:04.936 [main] INFO  c.a.e.server.lib.sql.DataSourcePool - DataSourcePool [h2] autoCommit[false] transIsolation[READ_COMMITTED] min[2] max[25]
+18:12:05.216 [main] INFO  c.a.ebean.internal.DefaultContainer - DatabasePlatform name:h2 platform:h2
+18:12:05.401 [main] INFO  c.a.e.s.deploy.BeanDescriptorManager - Entities enhanced[7]
+18:12:05.489 [main] TRACE org.avaje.ebean.TXN - txn[1001] Begin
+18:12:05.490 [main] INFO  c.avaje.ebean.dbmigration.DdlRunner - Executing h2-drop-all.sql - 29 statements
+18:12:05.519 [main] INFO  org.avaje.ebean.TXN - txn[1001] Commit
+18:12:05.522 [main] TRACE org.avaje.ebean.TXN - txn[1002] Begin
+18:12:05.522 [main] INFO  c.avaje.ebean.dbmigration.DdlRunner - Executing h2-create-all.sql - 29 statements
+18:12:05.614 [main] INFO  org.avaje.ebean.TXN - txn[1002] Commit
+18:12:05.616 [main] TRACE org.avaje.ebean.TXN - txn[1003] Begin
+18:12:05.616 [main] INFO  c.avaje.ebean.dbmigration.DdlRunner - Executing fixture.sql - 1 statements
+18:12:05.620 [main] INFO  org.avaje.ebean.TXN - txn[1003] Commit
+18:12:05.664 [main] ERROR c.a.e.server.query.SqlTreeBuilder - property [email] not found on org.example.domain.Customer for query - excluding it.
+18:12:05.683 [main] DEBUG org.avaje.ebean.SQL - txn[1004] select t0.id c0, t0.name c1, t0.id c2 from be_customer t0 where t0.id = ?  ; --bind(12)
+18:12:05.686 [main] DEBUG org.avaje.ebean.SUM - txn[1004] FindBean type[Customer] origin[CdTSLm.GmrGy.BvQ021] exeMicros[9815] rows[0] bind[12]
+18:12:05.687 [main] TRACE org.avaje.ebean.TXN - txn[1004] Commit - query only
+18:12:05.704 [main] DEBUG org.avaje.ebean.SQL - txn[1005] select t0.id c0, t0.name c1 from be_customer t0 left outer join o_address t1 on t1.id = t0.billing_address_id  where t1.country_code = ? ; --bind(NZ)
+18:12:05.705 [main] DEBUG org.avaje.ebean.SUM - txn[1005] FindMany type[Customer] origin[CdTSLo.8ZDgW.BvQ021] exeMicros[3629] rows[0] name[] predicates[t1.country_code = ? ] bind[NZ]
+18:12:05.716 [main] TRACE org.avaje.ebean.TXN - txn[1005] Commit - query only
+18:12:05.739 [main] DEBUG org.avaje.ebean.SQL - txn[1006] select t0.id c0, t0.inactive c1, t0.name c2, t0.registered c3, t0.comments c4, t0.version c5, t0.when_created c6, t0.when_updated c7, t0.billing_address_id c8, t0.shipping_address_id c9 from be_customer t0 where lower(t0.name) like ? ; --bind(rob%)
+18:12:05.739 [main] DEBUG org.avaje.ebean.SUM - txn[1006] FindMany type[Customer] origin[CdTSLo.Bjv3a-.BvQ021] exeMicros[1256] rows[0] name[] predicates[lower(t0.name) like ? ] bind[rob%]
+18:12:05.739 [main] TRACE org.avaje.ebean.TXN - txn[1006] Commit - query only
+18:12:05.741 [main] TRACE org.avaje.ebean.TXN - txn[1007] Begin
+18:12:05.767 [main] DEBUG org.avaje.ebean.SQL - txn[1007] insert into be_customer (id, inactive, name, registered, comments, version, when_created, when_updated, billing_address_id, shipping_address_id) values (?,?,?,?,?,?,?,?,?,?); --bind(1,false,Roberto,null,null,1,2016-06-08 18:12:05.766,2016-06-08 18:12:05.767,null,null,)
+18:12:05.768 [main] DEBUG org.avaje.ebean.SUM - txn[1007] Inserted [Customer] [1]
+18:12:05.771 [main] DEBUG org.avaje.ebean.SQL - txn[1007] insert into be_customer (id, inactive, name, registered, comments, version, when_created, when_updated, billing_address_id, shipping_address_id) values (?,?,?,?,?,?,?,?,?,?); --bind(2,false,Franko,null,null,1,2016-06-08 18:12:05.77,2016-06-08 18:12:05.77,null,null,)
+18:12:05.772 [main] DEBUG org.avaje.ebean.SUM - txn[1007] Inserted [Customer] [2]
+18:12:05.772 [main] INFO  org.avaje.ebean.TXN - txn[1007] Commit
+18:12:05.774 [main] DEBUG org.avaje.ebean.SQL - txn[1008] insert into be_customer (id, inactive, name, registered, comments, version, when_created, when_updated, billing_address_id, shipping_address_id) values (?,?,?,?,?,?,?,?,?,?); --bind(3,false,Rob,2014-04-01,null,1,2016-06-08 18:12:05.774,2016-06-08 18:12:05.774,null,null,)
+18:12:05.775 [main] DEBUG org.avaje.ebean.SUM - txn[1008] Inserted [Customer] [3]
+18:12:05.775 [main] DEBUG org.avaje.ebean.TXN - txn[1008] Commit
+18:12:05.777 [main] DEBUG org.avaje.ebean.SQL - txn[1009] select t0.id c0, t0.inactive c1, t0.name c2, t0.registered c3, t0.comments c4, t0.version c5, t0.when_created c6, t0.when_updated c7, t0.billing_address_id c8, t0.shipping_address_id c9 from be_customer t0 where t0.id = ?  ; --bind(3)
+18:12:05.783 [main] DEBUG org.avaje.ebean.SUM - txn[1009] FindBean type[Customer] origin[CdTSLm.f0Wym.BvQ021] exeMicros[6960] rows[1] bind[3]
+18:12:05.785 [main] TRACE org.avaje.ebean.TXN - txn[1009] Commit - query only
+18:12:05.786 [main] DEBUG org.avaje.ebean.SQL - txn[1010] select t0.id c0, t0.inactive c1, t0.name c2, t0.registered c3, t0.comments c4, t0.version c5, t0.when_created c6, t0.when_updated c7, t0.billing_address_id c8, t0.shipping_address_id c9 from be_customer t0 where t0.id = ?  ; --bind(3)
+18:12:05.786 [main] DEBUG org.avaje.ebean.SUM - txn[1010] FindBean type[Customer] origin[CdTSLm.f0Wyp.BvQ021] exeMicros[695] rows[1] bind[3]
+18:12:05.786 [main] TRACE org.avaje.ebean.TXN - txn[1010] Commit - query only
+18:12:05.787 [main] TRACE org.avaje.ebean.TXN - txn[1011] Begin
+18:12:05.791 [main] DEBUG org.avaje.ebean.SUM - txn[1011] BatchControl flush [Customer:100 i:2]
+18:12:05.795 [main] DEBUG org.avaje.ebean.SQL - txn[1011] insert into be_customer (id, inactive, name, registered, comments, version, when_created, when_updated, billing_address_id, shipping_address_id) values (?,?,?,?,?,?,?,?,?,?); --bind(4,false,Roberto,null,null,1,2016-06-08 18:12:05.792,2016-06-08 18:12:05.792,null,null,)
+18:12:05.798 [main] DEBUG org.avaje.ebean.SQL - txn[1011] insert into be_customer (id, inactive, name, registered, comments, version, when_created, when_updated, billing_address_id, shipping_address_id) values (?,?,?,?,?,?,?,?,?,?); --bind(5,false,Franko,null,null,1,2016-06-08 18:12:05.797,2016-06-08 18:12:05.797,null,null,)
+18:12:05.800 [main] DEBUG org.avaje.ebean.SUM - txn[1011] Inserted [Customer] [4]
+18:12:05.800 [main] DEBUG org.avaje.ebean.SUM - txn[1011] Inserted [Customer] [5]
+18:12:05.801 [main] INFO  org.avaje.ebean.TXN - txn[1011] Commit
+18:12:05.806 [main] DEBUG org.avaje.ebean.SQL - txn[1012] insert into be_customer (id, inactive, name, registered, comments, version, when_created, when_updated, billing_address_id, shipping_address_id) values (?,?,?,?,?,?,?,?,?,?); --bind(6,false,Hello0,null,null,1,2016-06-08 18:12:05.806,2016-06-08 18:12:05.806,null,null,)
+18:12:05.808 [main] DEBUG org.avaje.ebean.SUM - txn[1012] Inserted [Customer] [6]
+18:12:05.809 [main] DEBUG org.avaje.ebean.TXN - txn[1012] Commit
+18:12:05.810 [main] DEBUG org.avaje.ebean.SQL - txn[1013] insert into be_customer (id, inactive, name, registered, comments, version, when_created, when_updated, billing_address_id, shipping_address_id) values (?,?,?,?,?,?,?,?,?,?); --bind(7,false,Hello1,null,null,1,2016-06-08 18:12:05.81,2016-06-08 18:12:05.81,null,null,)
+18:12:05.811 [main] DEBUG org.avaje.ebean.SUM - txn[1013] Inserted [Customer] [7]
+18:12:05.811 [main] DEBUG org.avaje.ebean.TXN - txn[1013] Commit
+18:12:05.813 [main] DEBUG org.avaje.ebean.SQL - txn[1014] insert into be_customer (id, inactive, name, registered, comments, version, when_created, when_updated, billing_address_id, shipping_address_id) values (?,?,?,?,?,?,?,?,?,?); --bind(8,false,Hello2,null,null,1,2016-06-08 18:12:05.812,2016-06-08 18:12:05.812,null,null,)
+18:12:05.814 [main] DEBUG org.avaje.ebean.SUM - txn[1014] Inserted [Customer] [8]
+18:12:05.815 [main] DEBUG org.avaje.ebean.TXN - txn[1014] Commit
+18:12:05.816 [main] DEBUG org.avaje.ebean.SQL - txn[1015] insert into be_customer (id, inactive, name, registered, comments, version, when_created, when_updated, billing_address_id, shipping_address_id) values (?,?,?,?,?,?,?,?,?,?); --bind(9,false,Hello3,null,null,1,2016-06-08 18:12:05.816,2016-06-08 18:12:05.816,null,null,)
+18:12:05.816 [main] DEBUG org.avaje.ebean.SUM - txn[1015] Inserted [Customer] [9]
+18:12:05.817 [main] DEBUG org.avaje.ebean.TXN - txn[1015] Commit
+18:12:05.818 [main] DEBUG org.avaje.ebean.SQL - txn[1016] insert into be_customer (id, inactive, name, registered, comments, version, when_created, when_updated, billing_address_id, shipping_address_id) values (?,?,?,?,?,?,?,?,?,?); --bind(10,false,Hello4,null,null,1,2016-06-08 18:12:05.817,2016-06-08 18:12:05.818,null,null,)
+18:12:05.818 [main] DEBUG org.avaje.ebean.SUM - txn[1016] Inserted [Customer] [10]
+18:12:05.819 [main] DEBUG org.avaje.ebean.TXN - txn[1016] Commit
+18:12:05.820 [main] DEBUG org.avaje.ebean.SQL - txn[1017] insert into be_customer (id, inactive, name, registered, comments, version, when_created, when_updated, billing_address_id, shipping_address_id) values (?,?,?,?,?,?,?,?,?,?); --bind(11,false,Hello5,null,null,1,2016-06-08 18:12:05.82,2016-06-08 18:12:05.82,null,null,)
+18:12:05.821 [main] DEBUG org.avaje.ebean.SUM - txn[1017] Inserted [Customer] [11]
+18:12:05.822 [main] DEBUG org.avaje.ebean.TXN - txn[1017] Commit
+18:12:05.823 [main] DEBUG org.avaje.ebean.SQL - txn[1018] insert into be_customer (id, inactive, name, registered, comments, version, when_created, when_updated, billing_address_id, shipping_address_id) values (?,?,?,?,?,?,?,?,?,?); --bind(12,false,Hello6,null,null,1,2016-06-08 18:12:05.823,2016-06-08 18:12:05.823,null,null,)
+18:12:05.823 [main] DEBUG org.avaje.ebean.SUM - txn[1018] Inserted [Customer] [12]
+18:12:05.824 [main] DEBUG org.avaje.ebean.TXN - txn[1018] Commit
+18:12:05.824 [main] DEBUG org.avaje.ebean.SQL - txn[1019] insert into be_customer (id, inactive, name, registered, comments, version, when_created, when_updated, billing_address_id, shipping_address_id) values (?,?,?,?,?,?,?,?,?,?); --bind(13,false,Hello7,null,null,1,2016-06-08 18:12:05.824,2016-06-08 18:12:05.824,null,null,)
+18:12:05.824 [main] DEBUG org.avaje.ebean.SUM - txn[1019] Inserted [Customer] [13]
+18:12:05.825 [main] DEBUG org.avaje.ebean.TXN - txn[1019] Commit
+18:12:05.825 [main] DEBUG org.avaje.ebean.SQL - txn[1020] insert into be_customer (id, inactive, name, registered, comments, version, when_created, when_updated, billing_address_id, shipping_address_id) values (?,?,?,?,?,?,?,?,?,?); --bind(14,false,Hello8,null,null,1,2016-06-08 18:12:05.825,2016-06-08 18:12:05.825,null,null,)
+18:12:05.826 [main] DEBUG org.avaje.ebean.SUM - txn[1020] Inserted [Customer] [14]
+18:12:05.826 [main] DEBUG org.avaje.ebean.TXN - txn[1020] Commit
+18:12:05.826 [main] DEBUG org.avaje.ebean.SQL - txn[1021] insert into be_customer (id, inactive, name, registered, comments, version, when_created, when_updated, billing_address_id, shipping_address_id) values (?,?,?,?,?,?,?,?,?,?); --bind(15,false,Hello9,null,null,1,2016-06-08 18:12:05.826,2016-06-08 18:12:05.826,null,null,)
+18:12:05.827 [main] DEBUG org.avaje.ebean.SUM - txn[1021] Inserted [Customer] [15]
+18:12:05.828 [main] DEBUG org.avaje.ebean.TXN - txn[1021] Commit
+18:12:05.833 [main] DEBUG org.avaje.ebean.SQL - txn[1022] select t0.id c0, t0.name c1 from be_customer t0 where t0.id <= ? ; --bind(8)
+18:12:05.835 [main] DEBUG org.avaje.ebean.SUM - txn[1022] FindMany type[Customer] origin[CdTSLn.5NLf-.BvQ021] exeMicros[0] rows[0] name[] predicates[t0.id <= ? ] bind[8]
+18:12:05.837 [main] TRACE org.avaje.ebean.TXN - txn[1022] Commit - query only
+18:12:05.839 [main] DEBUG org.avaje.ebean.SQL - txn[1023] select t0.id c0, t0.name c1 from be_customer t0; --bind()
+18:12:05.839 [main] DEBUG org.avaje.ebean.SUM - txn[1023] FindMany type[Customer] origin[CdTSLn.5NLgI.BvQ021] exeMicros[0] rows[0] name[] predicates[] bind[]
+18:12:05.839 [main] TRACE org.avaje.ebean.TXN - txn[1023] Commit - query only
+18:12:05.864 [Thread-1] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@4d1c00d0: startup date [Wed Jun 08 18:11:59 CST 2016]; root of context hierarchy

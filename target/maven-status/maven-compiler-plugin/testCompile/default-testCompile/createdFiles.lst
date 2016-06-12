@@ -1,0 +1,7 @@
+demo/ControllersTest.class
+org/example/domain/ExamplePartialObjectQueryTest.class
+org/example/domain/LargeQueryWithFindIterateTest.class
+demo/SampleWebFreeMarkerApplicationTests$WebSecurityConfig.class
+org/example/ExampleBaseTestCase.class
+org/example/domain/InsertCustomerTest.class
+demo/SampleWebFreeMarkerApplicationTests.class

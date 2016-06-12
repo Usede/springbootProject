@@ -1,0 +1,145 @@
+18:10:47.414 [main] INFO  demo.Application - Starting Application on loujiandeMacBook-Pro.local with PID 36712 (/Users/loujian/Usede/springboot-demo/target/classes started by loujian in /Users/loujian/Usede/springboot-demo)
+18:10:47.995 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@551bdc27: startup date [Wed Jun 08 18:10:47 CST 2016]; root of context hierarchy
+18:10:49.581 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.1.3.Final
+18:10:50.334 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+18:10:50.646 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+18:10:50.647 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.0.28
+18:10:50.777 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:10:50.777 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2782 ms
+18:10:51.772 [localhost-startStop-1] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7ce70c21, org.springframework.security.web.context.SecurityContextPersistenceFilter@29d45a07, org.springframework.security.web.header.HeaderWriterFilter@3f9293e6, org.springframework.security.web.csrf.CsrfFilter@1c84bea6, org.springframework.security.web.authentication.logout.LogoutFilter@f65ae91, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7c6c8dde, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4a13eb82, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@54db59c7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4c348f43, org.springframework.security.web.session.SessionManagementFilter@331c6443, org.springframework.security.web.access.ExceptionTranslationFilter@7aa728c0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@236b0797]
+18:10:51.849 [localhost-startStop-1] INFO  o.s.b.c.e.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+18:10:51.859 [localhost-startStop-1] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+18:10:51.859 [localhost-startStop-1] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+18:10:51.860 [localhost-startStop-1] INFO  o.s.b.c.e.FilterRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+18:10:52.131 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@551bdc27: startup date [Wed Jun 08 18:10:47 CST 2016]; root of context hierarchy
+18:10:52.215 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/customers/],produces=[application/json]}" onto java.util.List demo.web.CustomerController.customers()
+18:10:52.217 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/customers/{customer}],methods=[GET],produces=[application/json]}" onto java.lang.String demo.web.CustomerController.getCustomer(java.lang.Long,javax.servlet.http.HttpSession)
+18:10:52.218 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/customers/objmap],methods=[GET],produces=[application/json]}" onto java.lang.String demo.web.CustomerController.objmap()
+18:10:52.218 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/customers/commits],methods=[GET],produces=[application/json]}" onto java.lang.String demo.web.CustomerController.getCommits()
+18:10:52.219 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto java.lang.String demo.web.HomeController.home()
+18:10:52.220 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/welcome]}" onto public java.lang.String demo.web.WelcomeController.welcome(java.util.Map<java.lang.String, java.lang.Object>)
+18:10:52.220 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/welcomeandy]}" onto public java.lang.String demo.web.WelcomeController.welcomeandy(java.util.Map<java.lang.String, java.lang.Object>)
+18:10:52.221 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/login]}" onto public java.lang.String demo.web.WelcomeController.login(java.util.Map<java.lang.String, java.lang.Object>)
+18:10:52.222 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+18:10:52.223 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+18:10:52.250 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:10:52.250 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:10:52.297 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:10:52.452 [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+18:10:52.834 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+18:10:52.877 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+18:10:52.890 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+18:10:52.938 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+18:10:52.969 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+18:10:52.972 [main] INFO  demo.Application - Started Application in 6.007 seconds (JVM running for 7.474)
+18:10:53.428 [main] INFO  c.a.e.s.core.BootupClassPathSearch - Classpath search hits in jars [] pkgs [org.example.domain] searchTime [351]
+18:10:53.452 [main] INFO  c.a.e.server.lib.sql.DataSourcePool - DataSourcePool [h2] autoCommit[false] transIsolation[READ_COMMITTED] min[2] max[25]
+18:10:53.893 [main] INFO  c.a.ebean.internal.DefaultContainer - DatabasePlatform name:h2 platform:h2
+18:10:54.302 [main] INFO  c.a.e.s.deploy.BeanDescriptorManager - Entities enhanced[7]
+18:10:54.422 [main] TRACE org.avaje.ebean.TXN - txn[1001] Begin
+18:10:54.422 [main] INFO  c.avaje.ebean.dbmigration.DdlRunner - Executing h2-drop-all.sql - 29 statements
+18:10:54.472 [main] INFO  org.avaje.ebean.TXN - txn[1001] Commit
+18:10:54.476 [main] TRACE org.avaje.ebean.TXN - txn[1002] Begin
+18:10:54.476 [main] INFO  c.avaje.ebean.dbmigration.DdlRunner - Executing h2-create-all.sql - 29 statements
+18:10:54.535 [main] INFO  org.avaje.ebean.TXN - txn[1002] Commit
+18:10:54.541 [main] TRACE org.avaje.ebean.TXN - txn[1003] Begin
+18:10:54.541 [main] INFO  c.avaje.ebean.dbmigration.DdlRunner - Executing fixture.sql - 1 statements
+18:10:54.546 [main] INFO  org.avaje.ebean.TXN - txn[1003] Commit
+18:10:54.558 [main] TRACE org.avaje.ebean.TXN - txn[1004] Begin
+18:10:54.574 [main] DEBUG org.avaje.ebean.SQL - txn[1004] delete from o_order_detail
+18:10:54.576 [main] DEBUG org.avaje.ebean.SUM - txn[1004] Delete table[o_order_detail] rows[0] bind[null]
+18:10:54.579 [main] DEBUG org.avaje.ebean.SQL - txn[1004] delete from o_order
+18:10:54.580 [main] DEBUG org.avaje.ebean.SUM - txn[1004] Delete table[o_order] rows[0] bind[null]
+18:10:54.580 [main] DEBUG org.avaje.ebean.SQL - txn[1004] delete from be_contact
+18:10:54.580 [main] DEBUG org.avaje.ebean.SUM - txn[1004] Delete table[be_contact] rows[0] bind[null]
+18:10:54.581 [main] DEBUG org.avaje.ebean.SQL - txn[1004] delete from be_customer
+18:10:54.581 [main] DEBUG org.avaje.ebean.SUM - txn[1004] Delete table[be_customer] rows[0] bind[null]
+18:10:54.581 [main] DEBUG org.avaje.ebean.SQL - txn[1004] delete from o_address
+18:10:54.581 [main] DEBUG org.avaje.ebean.SUM - txn[1004] Delete table[o_address] rows[0] bind[null]
+18:10:54.584 [main] DEBUG org.avaje.ebean.SQL - txn[1004] delete from o_country
+18:10:54.587 [main] DEBUG org.avaje.ebean.SUM - txn[1004] DeleteSql table[o_country] rows[0] bind[null]
+18:10:54.587 [main] DEBUG org.avaje.ebean.SQL - txn[1004] delete from o_product
+18:10:54.588 [main] DEBUG org.avaje.ebean.SUM - txn[1004] DeleteSql table[o_product] rows[1] bind[null]
+18:10:54.596 [main] DEBUG org.avaje.ebean.SQL - txn[1004] insert into o_country (code, name) values (?,?); --bind(NZ,New Zealand,)
+18:10:54.597 [main] DEBUG org.avaje.ebean.SUM - txn[1004] Inserted [Country] [NZ]
+18:10:54.598 [main] DEBUG org.avaje.ebean.SQL - txn[1004] insert into o_country (code, name) values (?,?); --bind(AU,Australia,)
+18:10:54.598 [main] DEBUG org.avaje.ebean.SUM - txn[1004] Inserted [Country] [AU]
+18:10:54.614 [main] DEBUG org.avaje.ebean.SQL - txn[1004] insert into o_product (id, sku, name, version, when_created, when_updated) values (?,?,?,?,?,?); --bind(1,C001,Chair,1,2016-06-08 18:10:54.614,2016-06-08 18:10:54.614,)
+18:10:54.615 [main] DEBUG org.avaje.ebean.SUM - txn[1004] Inserted [Product] [1]
+18:10:54.616 [main] DEBUG org.avaje.ebean.SQL - txn[1004] insert into o_product (id, sku, name, version, when_created, when_updated) values (?,?,?,?,?,?); --bind(2,DSK1,Desk,1,2016-06-08 18:10:54.616,2016-06-08 18:10:54.616,)
+18:10:54.616 [main] DEBUG org.avaje.ebean.SUM - txn[1004] Inserted [Product] [2]
+18:10:54.617 [main] DEBUG org.avaje.ebean.SQL - txn[1004] insert into o_product (id, sku, name, version, when_created, when_updated) values (?,?,?,?,?,?); --bind(3,C002,Computer,1,2016-06-08 18:10:54.616,2016-06-08 18:10:54.616,)
+18:10:54.617 [main] DEBUG org.avaje.ebean.SUM - txn[1004] Inserted [Product] [3]
+18:10:54.617 [main] DEBUG org.avaje.ebean.SQL - txn[1004] insert into o_product (id, sku, name, version, when_created, when_updated) values (?,?,?,?,?,?); --bind(4,C003,Printer,1,2016-06-08 18:10:54.617,2016-06-08 18:10:54.617,)
+18:10:54.617 [main] DEBUG org.avaje.ebean.SUM - txn[1004] Inserted [Product] [4]
+18:10:54.627 [main] DEBUG org.avaje.ebean.SQL - txn[1004] insert into o_address (id, line1, line2, city, version, when_created, when_updated, country_code) values (?,?,?,?,?,?,?,?); --bind(1,P.O.Box 1234,St Lukes,Auckland,1,2016-06-08 18:10:54.627,2016-06-08 18:10:54.627,NZ,)
+18:10:54.628 [main] DEBUG org.avaje.ebean.SUM - txn[1004] Inserted [Address] [1]
+18:10:54.628 [main] DEBUG org.avaje.ebean.SQL - txn[1004] insert into o_address (id, line1, line2, city, version, when_created, when_updated, country_code) values (?,?,?,?,?,?,?,?); --bind(2,1 Banana St,Sandringham,Auckland,1,2016-06-08 18:10:54.628,2016-06-08 18:10:54.628,NZ,)
+18:10:54.629 [main] DEBUG org.avaje.ebean.SUM - txn[1004] Inserted [Address] [2]
+18:10:54.630 [main] DEBUG org.avaje.ebean.SQL - txn[1004] insert into be_customer (id, inactive, name, registered, comments, version, when_created, when_updated, billing_address_id, shipping_address_id) values (?,?,?,?,?,?,?,?,?,?); --bind(1,false,Rob,null,null,1,2016-06-08 18:10:54.63,2016-06-08 18:10:54.63,1,2,)
+18:10:54.630 [main] DEBUG org.avaje.ebean.SUM - txn[1004] Inserted [Customer] [1]
+18:10:54.634 [main] DEBUG org.avaje.ebean.SQL - txn[1004] insert into be_contact (id, first_name, last_name, email, phone, version, when_created, when_updated, customer_id) values (?,?,?,?,?,?,?,?,?); --bind(1,Jim1,Cricket,null,null,1,2016-06-08 18:10:54.634,2016-06-08 18:10:54.634,1,)
+18:10:54.635 [main] DEBUG org.avaje.ebean.SUM - txn[1004] Inserted [Contact] [1]
+18:10:54.637 [main] DEBUG org.avaje.ebean.SQL - txn[1004] insert into be_contact (id, first_name, last_name, email, phone, version, when_created, when_updated, customer_id) values (?,?,?,?,?,?,?,?,?); --bind(2,Fred1,Blue,null,null,1,2016-06-08 18:10:54.637,2016-06-08 18:10:54.637,1,)
+18:10:54.638 [main] DEBUG org.avaje.ebean.SUM - txn[1004] Inserted [Contact] [2]
+18:10:54.641 [main] DEBUG org.avaje.ebean.SQL - txn[1004] insert into be_contact (id, first_name, last_name, email, phone, version, when_created, when_updated, customer_id) values (?,?,?,?,?,?,?,?,?); --bind(3,Bugs1,Bunny,null,null,1,2016-06-08 18:10:54.639,2016-06-08 18:10:54.641,1,)
+18:10:54.642 [main] DEBUG org.avaje.ebean.SUM - txn[1004] Inserted [Contact] [3]
+18:10:54.644 [main] DEBUG org.avaje.ebean.SQL - txn[1004] insert into be_customer (id, inactive, name, registered, comments, version, when_created, when_updated, billing_address_id, shipping_address_id) values (?,?,?,?,?,?,?,?,?,?); --bind(2,false,Cust NoAddress,null,null,1,2016-06-08 18:10:54.643,2016-06-08 18:10:54.644,null,null,)
+18:10:54.645 [main] DEBUG org.avaje.ebean.SUM - txn[1004] Inserted [Customer] [2]
+18:10:54.646 [main] DEBUG org.avaje.ebean.SQL - txn[1004] insert into be_contact (id, first_name, last_name, email, phone, version, when_created, when_updated, customer_id) values (?,?,?,?,?,?,?,?,?); --bind(4,Jack,Black,black1@test.com,null,1,2016-06-08 18:10:54.646,2016-06-08 18:10:54.646,2,)
+18:10:54.646 [main] DEBUG org.avaje.ebean.SUM - txn[1004] Inserted [Contact] [4]
+18:10:54.647 [main] DEBUG org.avaje.ebean.SQL - txn[1004] insert into o_address (id, line1, line2, city, version, when_created, when_updated, country_code) values (?,?,?,?,?,?,?,?); --bind(3,West Coast Rd,St Lukes,Auckland,1,2016-06-08 18:10:54.647,2016-06-08 18:10:54.647,NZ,)
+18:10:54.648 [main] DEBUG org.avaje.ebean.SUM - txn[1004] Inserted [Address] [3]
+18:10:54.648 [main] DEBUG org.avaje.ebean.SQL - txn[1004] insert into o_address (id, line1, line2, city, version, when_created, when_updated, country_code) values (?,?,?,?,?,?,?,?); --bind(4,12 Apple St,Sandringham,Auckland,1,2016-06-08 18:10:54.648,2016-06-08 18:10:54.648,NZ,)
+18:10:54.649 [main] DEBUG org.avaje.ebean.SUM - txn[1004] Inserted [Address] [4]
+18:10:54.649 [main] DEBUG org.avaje.ebean.SQL - txn[1004] insert into be_customer (id, inactive, name, registered, comments, version, when_created, when_updated, billing_address_id, shipping_address_id) values (?,?,?,?,?,?,?,?,?,?); --bind(3,false,Fiona,null,null,1,2016-06-08 18:10:54.649,2016-06-08 18:10:54.649,3,4,)
+18:10:54.650 [main] DEBUG org.avaje.ebean.SUM - txn[1004] Inserted [Customer] [3]
+18:10:54.650 [main] DEBUG org.avaje.ebean.SQL - txn[1004] insert into be_contact (id, first_name, last_name, email, phone, version, when_created, when_updated, customer_id) values (?,?,?,?,?,?,?,?,?); --bind(5,Jim1,Cricket,null,null,1,2016-06-08 18:10:54.65,2016-06-08 18:10:54.65,3,)
+18:10:54.650 [main] DEBUG org.avaje.ebean.SUM - txn[1004] Inserted [Contact] [5]
+18:10:54.651 [main] DEBUG org.avaje.ebean.SQL - txn[1004] insert into be_contact (id, first_name, last_name, email, phone, version, when_created, when_updated, customer_id) values (?,?,?,?,?,?,?,?,?); --bind(6,Fred1,Blue,null,null,1,2016-06-08 18:10:54.651,2016-06-08 18:10:54.651,3,)
+18:10:54.651 [main] DEBUG org.avaje.ebean.SUM - txn[1004] Inserted [Contact] [6]
+18:10:54.651 [main] DEBUG org.avaje.ebean.SQL - txn[1004] insert into be_contact (id, first_name, last_name, email, phone, version, when_created, when_updated, customer_id) values (?,?,?,?,?,?,?,?,?); --bind(7,Bugs1,Bunny,null,null,1,2016-06-08 18:10:54.651,2016-06-08 18:10:54.651,3,)
+18:10:54.652 [main] DEBUG org.avaje.ebean.SUM - txn[1004] Inserted [Contact] [7]
+18:10:54.652 [main] DEBUG org.avaje.ebean.SQL - txn[1004] insert into be_contact (id, first_name, last_name, email, phone, version, when_created, when_updated, customer_id) values (?,?,?,?,?,?,?,?,?); --bind(8,Fiona,Black,black2@test.com,null,1,2016-06-08 18:10:54.652,2016-06-08 18:10:54.652,3,)
+18:10:54.652 [main] DEBUG org.avaje.ebean.SUM - txn[1004] Inserted [Contact] [8]
+18:10:54.653 [main] DEBUG org.avaje.ebean.SQL - txn[1004] insert into be_contact (id, first_name, last_name, email, phone, version, when_created, when_updated, customer_id) values (?,?,?,?,?,?,?,?,?); --bind(9,Tracy,Red,red3@test.com,null,1,2016-06-08 18:10:54.653,2016-06-08 18:10:54.653,3,)
+18:10:54.653 [main] DEBUG org.avaje.ebean.SUM - txn[1004] Inserted [Contact] [9]
+18:10:54.654 [main] DEBUG org.avaje.ebean.SQL - txn[1004] insert into o_address (id, line1, line2, city, version, when_created, when_updated, country_code) values (?,?,?,?,?,?,?,?); --bind(5,Bos town,St Lukes,Auckland,1,2016-06-08 18:10:54.654,2016-06-08 18:10:54.654,NZ,)
+18:10:54.654 [main] DEBUG org.avaje.ebean.SUM - txn[1004] Inserted [Address] [5]
+18:10:54.655 [main] DEBUG org.avaje.ebean.SQL - txn[1004] insert into o_address (id, line1, line2, city, version, when_created, when_updated, country_code) values (?,?,?,?,?,?,?,?); --bind(6,15 Kumera Way,Sandringham,Auckland,1,2016-06-08 18:10:54.654,2016-06-08 18:10:54.655,NZ,)
+18:10:54.655 [main] DEBUG org.avaje.ebean.SUM - txn[1004] Inserted [Address] [6]
+18:10:54.655 [main] DEBUG org.avaje.ebean.SQL - txn[1004] insert into be_customer (id, inactive, name, registered, comments, version, when_created, when_updated, billing_address_id, shipping_address_id) values (?,?,?,?,?,?,?,?,?,?); --bind(4,false,NocCust,null,null,1,2016-06-08 18:10:54.655,2016-06-08 18:10:54.655,5,6,)
+18:10:54.655 [main] DEBUG org.avaje.ebean.SUM - txn[1004] Inserted [Customer] [4]
+18:10:54.656 [main] DEBUG org.avaje.ebean.SQL - txn[1004] insert into be_contact (id, first_name, last_name, email, phone, version, when_created, when_updated, customer_id) values (?,?,?,?,?,?,?,?,?); --bind(10,Jim1,Cricket,null,null,1,2016-06-08 18:10:54.656,2016-06-08 18:10:54.656,4,)
+18:10:54.656 [main] DEBUG org.avaje.ebean.SUM - txn[1004] Inserted [Contact] [10]
+18:10:54.657 [main] DEBUG org.avaje.ebean.SQL - txn[1004] insert into be_contact (id, first_name, last_name, email, phone, version, when_created, when_updated, customer_id) values (?,?,?,?,?,?,?,?,?); --bind(11,Fred1,Blue,null,null,1,2016-06-08 18:10:54.657,2016-06-08 18:10:54.657,4,)
+18:10:54.657 [main] DEBUG org.avaje.ebean.SUM - txn[1004] Inserted [Contact] [11]
+18:10:54.658 [main] DEBUG org.avaje.ebean.SQL - txn[1004] insert into be_contact (id, first_name, last_name, email, phone, version, when_created, when_updated, customer_id) values (?,?,?,?,?,?,?,?,?); --bind(12,Bugs1,Bunny,null,null,1,2016-06-08 18:10:54.658,2016-06-08 18:10:54.658,4,)
+18:10:54.658 [main] DEBUG org.avaje.ebean.SUM - txn[1004] Inserted [Contact] [12]
+18:10:54.661 [main] DEBUG org.avaje.ebean.SQL - txn[1004] insert into o_order (id, status, order_date, ship_date, version, when_created, when_updated, customer_id, shipping_address_id) values (?,?,?,?,?,?,?,?,?); --bind(1,null,null,null,1,2016-06-08 18:10:54.661,2016-06-08 18:10:54.661,1,null,)
+18:10:54.662 [main] DEBUG org.avaje.ebean.SUM - txn[1004] Inserted [Order] [1]
+18:10:54.663 [main] DEBUG org.avaje.ebean.SQL - txn[1004] insert into o_order_detail (id, order_qty, ship_qty, unit_price, version, when_created, when_updated, order_id, product_id) values (?,?,?,?,?,?,?,?,?); --bind(1,5,null,10.5,1,2016-06-08 18:10:54.663,2016-06-08 18:10:54.663,1,1,)
+18:10:54.664 [main] DEBUG org.avaje.ebean.SUM - txn[1004] Inserted [OrderDetail] [1]
+18:10:54.664 [main] DEBUG org.avaje.ebean.SQL - txn[1004] insert into o_order_detail (id, order_qty, ship_qty, unit_price, version, when_created, when_updated, order_id, product_id) values (?,?,?,?,?,?,?,?,?); --bind(2,3,null,1.1,1,2016-06-08 18:10:54.664,2016-06-08 18:10:54.664,1,2,)
+18:10:54.664 [main] DEBUG org.avaje.ebean.SUM - txn[1004] Inserted [OrderDetail] [2]
+18:10:54.665 [main] DEBUG org.avaje.ebean.SQL - txn[1004] insert into o_order_detail (id, order_qty, ship_qty, unit_price, version, when_created, when_updated, order_id, product_id) values (?,?,?,?,?,?,?,?,?); --bind(3,1,null,2.0,1,2016-06-08 18:10:54.665,2016-06-08 18:10:54.665,1,3,)
+18:10:54.665 [main] DEBUG org.avaje.ebean.SUM - txn[1004] Inserted [OrderDetail] [3]
+18:10:54.666 [main] DEBUG org.avaje.ebean.SQL - txn[1004] insert into o_order (id, status, order_date, ship_date, version, when_created, when_updated, customer_id, shipping_address_id) values (?,?,?,?,?,?,?,?,?); --bind(2,SHIPPED,null,null,1,2016-06-08 18:10:54.665,2016-06-08 18:10:54.666,2,null,)
+18:10:54.666 [main] DEBUG org.avaje.ebean.SUM - txn[1004] Inserted [Order] [2]
+18:10:54.666 [main] DEBUG org.avaje.ebean.SQL - txn[1004] insert into o_order_detail (id, order_qty, ship_qty, unit_price, version, when_created, when_updated, order_id, product_id) values (?,?,?,?,?,?,?,?,?); --bind(4,4,null,10.5,1,2016-06-08 18:10:54.666,2016-06-08 18:10:54.666,2,1,)
+18:10:54.667 [main] DEBUG org.avaje.ebean.SUM - txn[1004] Inserted [OrderDetail] [4]
+18:10:54.667 [main] DEBUG org.avaje.ebean.SQL - txn[1004] insert into o_order (id, status, order_date, ship_date, version, when_created, when_updated, customer_id, shipping_address_id) values (?,?,?,?,?,?,?,?,?); --bind(3,COMPLETE,null,null,1,2016-06-08 18:10:54.667,2016-06-08 18:10:54.667,1,null,)
+18:10:54.667 [main] DEBUG org.avaje.ebean.SUM - txn[1004] Inserted [Order] [3]
+18:10:54.668 [main] DEBUG org.avaje.ebean.SQL - txn[1004] insert into o_order_detail (id, order_qty, ship_qty, unit_price, version, when_created, when_updated, order_id, product_id) values (?,?,?,?,?,?,?,?,?); --bind(5,3,null,10.5,1,2016-06-08 18:10:54.668,2016-06-08 18:10:54.668,3,1,)
+18:10:54.668 [main] DEBUG org.avaje.ebean.SUM - txn[1004] Inserted [OrderDetail] [5]
+18:10:54.669 [main] DEBUG org.avaje.ebean.SQL - txn[1004] insert into o_order_detail (id, order_qty, ship_qty, unit_price, version, when_created, when_updated, order_id, product_id) values (?,?,?,?,?,?,?,?,?); --bind(6,40,null,2.1,1,2016-06-08 18:10:54.669,2016-06-08 18:10:54.669,3,3,)
+18:10:54.669 [main] DEBUG org.avaje.ebean.SUM - txn[1004] Inserted [OrderDetail] [6]
+18:10:54.670 [main] DEBUG org.avaje.ebean.SQL - txn[1004] insert into o_order (id, status, order_date, ship_date, version, when_created, when_updated, customer_id, shipping_address_id) values (?,?,?,?,?,?,?,?,?); --bind(4,null,null,null,1,2016-06-08 18:10:54.669,2016-06-08 18:10:54.669,1,null,)
+18:10:54.670 [main] DEBUG org.avaje.ebean.SUM - txn[1004] Inserted [Order] [4]
+18:10:54.672 [main] INFO  org.avaje.ebean.TXN - txn[1004] Commit
+18:11:24.625 [EbeanCacheWarmer] DEBUG org.avaje.ebean.SQL - txn[1005] select t0.code c0, t0.name c1 from o_country t0 order by t0.name; --bind()
+18:11:24.627 [EbeanCacheWarmer] DEBUG org.avaje.ebean.SUM - txn[1005] FindMany type[Country] origin[-YgOo.BGzE6u.9zOGK] exeMicros[6183] rows[2] name[] predicates[] bind[]
+18:11:24.641 [EbeanCacheWarmer] TRACE org.avaje.ebean.TXN - txn[1005] Commit - query only
+18:11:24.641 [EbeanCacheWarmer] INFO  org.avaje.ebean.cache.BEAN - Loaded Country cache with [2] beans
+18:11:50.587 [Thread-2] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@551bdc27: startup date [Wed Jun 08 18:10:47 CST 2016]; root of context hierarchy
+18:11:50.588 [Thread-2] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
